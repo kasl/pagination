@@ -1,0 +1,17 @@
+{
+    "name": "pridemon/pagination",
+    "type":        "kohana-module",
+    "description": "Kohana pagination links generator module",
+    "license":     "BSD-3-Clause",
+    "require": {
+        "composer/installers": "~1.0",
+        "kohana/core":         ">=3.3",
+        "php":                 ">=5.3.3"
+    },
+    "authors": [
+        {
+            "name": "Ilya Gudkov",
+            "email": "pridemon@yandex.ru"
+        }
+    ]
+}
