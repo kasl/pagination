@@ -1,5 +1,5 @@
 {
-    "name": "pridemon/pagination",
+    "name": "kasl/pagination",
     "type":        "kohana-module",
     "description": "Kohana pagination links generator module",
     "license":     "BSD-3-Clause",
@@ -10,8 +10,8 @@
     },
     "authors": [
         {
-            "name": "Ilya Gudkov",
-            "email": "pridemon@yandex.ru"
+            "name": "Kasl",
+            "email": "roman.muratov@gmail.com"
         }
     ]
 }
