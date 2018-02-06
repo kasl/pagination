@@ -58,37 +58,60 @@ for ($i = $n7; $i <= $n8; $i++)
 <p class="pagination">
 
 	<?php if ($first_page !== FALSE): ?>
-		<a href="<?php echo HTML::chars($page->url($first_page)) ?>" rel="first"><?php echo __('First') ?></a>
+		<li class="page-item">
+			<a href="<?php echo HTML::chars($page->url($first_page)) ?>" rel="first"><?php echo __('First') ?></a>
+		</li>
 	<?php else: ?>
-		<?php echo __('First') ?>
+		<li class="page-item disabled">
+			<a href="#"><?php echo __('First') ?></a>
+		</li>
 	<?php endif ?>
 
+
 	<?php if ($previous_page !== FALSE): ?>
-		<a href="<?php echo HTML::chars($page->url($previous_page)) ?>" rel="prev"><?php echo __('Previous') ?></a>
+		<li class="page-item">
+			<a href="<?php echo HTML::chars($page->url($previous_page)) ?>" rel="prev"><?php echo __('Previous') ?></a>
+		</li>
 	<?php else: ?>
-		<?php echo __('Previous') ?>
+		<li class="page-item disabled">
+			<a href="#"><?php echo __('Previous') ?></a>
+		</li>
 	<?php endif ?>
 
 	<?php foreach ($links as $number => $content): ?>
 
 		<?php if ($number === $current_page): ?>
-			<strong><?php echo $content ?></strong>
+			<li class="page-item disabled">
+				<a href="#"><strong><?php echo $content ?></strong></a>
+			</li>
 		<?php else: ?>
-			<a href="<?php echo HTML::chars($page->url($number)) ?>"><?php echo $content ?></a>
+			<li class="page-item">
+				<a href="<?php echo HTML::chars($page->url($number)) ?>"><?php echo $content ?></a>
+			</li>
 		<?php endif ?>
 
 	<?php endforeach ?>
 
+
 	<?php if ($next_page !== FALSE): ?>
-		<a href="<?php echo HTML::chars($page->url($next_page)) ?>" rel="next"><?php echo __('Next') ?></a>
+		<li class="page-item">
+			<a href="<?php echo HTML::chars($page->url($next_page)) ?>" rel="next"><?php echo __('Next') ?></a>
+		</li>
 	<?php else: ?>
-		<?php echo __('Next') ?>
+		<li class="page-item disabled">
+			<a href=""><?php echo __('Next') ?></a>
+		</li>
 	<?php endif ?>
 
+
 	<?php if ($last_page !== FALSE): ?>
-		<a href="<?php echo HTML::chars($page->url($last_page)) ?>" rel="last"><?php echo __('Last') ?></a>
+		<li class="page-item">
+			<a href="<?php echo HTML::chars($page->url($last_page)) ?>" rel="last"><?php echo __('Last') ?></a>
+		</li>
 	<?php else: ?>
-		<?php echo __('Last') ?>
+		<li class="page-item disabled">
+			<a href="#"><?php echo __('Last') ?></a>
+		</li>
 	<?php endif ?>
 
 </p><!-- .pagination -->
