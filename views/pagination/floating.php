@@ -55,7 +55,7 @@ for ($i = $n7; $i <= $n8; $i++)
 }
 
 ?>
-<p class="pagination">
+<ul class="pagination">
 
 	<?php if ($first_page !== FALSE): ?>
 		<li class="page-item">
@@ -114,4 +114,4 @@ for ($i = $n7; $i <= $n8; $i++)
 		</li>
 	<?php endif ?>
 
-</p><!-- .pagination -->
+</ul><!-- .pagination -->
